@@ -1,1 +1,511 @@
-<h1>testing quart</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="QUART-Online: Latency-Free Large Multimodal Language Model for Quadruped Robot Learning">
+  <meta name="keywords" content="QUART, QUART-Online, quadruped">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    QUART-Online
+  </title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/dog.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://quart-online.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="quart.html">
+            QUART
+          </a>
+          <a class="navbar-item" href="https://quart-online.github.io">
+            QUART-Online
+          </a>
+
+          <!-- <a class="project2" href="https://xxx2.github.io">
+            xxx2
+          </a> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body" style="padding:3rem 1.5rem 0.5rem 1.5rem">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            QUART-Online: 
+          </h1>
+          <h1 class="title is-1 publication-title" style="font-size: 35px;">
+            Latency-Free Large Multimodal Language Model for Quadruped Robot Learning
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="#">Xinyang Tong</a>,
+              <!-- <sup>1</sup> -->
+            </span>
+            <span class="author-block">
+              <a href="https://dingpx.github.io/">Pengxiang Ding</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://milab.westlake.edu.cn/">Donglin Wang</a>,
+            </span>
+            <span class="author-block">
+              <a href="#">Wenjie Zhang</a>,
+            </span>
+            <span class="author-block">
+              <a href="#">Can Cui</a>,
+            </span>
+            <span class="author-block">
+              <a href="#">Mingyang Sun</a>,
+            </span>
+            <span class="author-block">
+              <a href="#">Yiguo Fan</a>,
+            </span>
+            <span class="author-block">
+              <a href="#">Han Zhao</a>,
+            </span>
+            <span class="author-block">
+              <a href="#">Hongyin Zhang</a>,
+            </span>
+            <span class="author-block">
+              <a href="#">Yonghao Dang</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://kyonhuang.top/">Siteng Huang</a>,
+            </span>
+            <span class="author-block">
+              <a href="#">Shangke Lyu</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <p class="author-block"><sup>1</sup>MiLAB, Westlake University    </p>
+            <p class="author-block"><sup>2</sup>Zhejiang University    </p>
+            <p class="author-block"><sup>3</sup>Beijing University of Posts and Telecommunications</p>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="xxx"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://quart-online.github.io"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- video -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="padding:1rem 0rem">
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <!-- Teaser image -->
+          <div class="has-text-centered">
+            <img src="./static/images/teaser.jpg" alt="teaser" style="max-width:100%; height:auto;">
+          </div>
+        </div>
+        <div class="column is-half">
+          <!-- Teaser description -->
+          <div class="content has-text-centered">
+            <h1 class="title">QUART-Online</h1>
+            <p class="has-text-justified">
+              We introduces QUART-Online, a novel latency-free quadruped multimodal large language model, 
+              designed to enhance inference efficiency without degrading the performance of the multimodal large language model. 
+              With the implementation of action chunk discretization, QUART-Online enhances the existing MLLM system, 
+              which was previously operating at a low frequency, enabling more precise actions to be executed
+               in real-time at a frequency of <strong>50Hz</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="section" style="padding:0rem 1.5rem 3rem 1.5rem">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-3 has-text-centered">Overview</h2>
+          <div class="has-text-centered">
+            <img src="./static/images/comparison_line.jpg" alt="QUART Framework" class="image is-fullwidth">
+          </div>
+          <p class="content has-text-justified mt-4" style="font-size:15.3px">
+             QUART-Online enhances the inference process by employing <strong>two key strategies: </strong><br>
+             1) it accelerates MLLM inference by generating a <strong>reduced number of tokens</strong> in the latent space as opposed to the raw space (2.5x); <br>
+             2) it introduces an <strong>action chunk mechanism</strong> during the action decoding phase, facilitating higher-frequency inference via multi-step predictions (10x). <br>
+             By integrating these two approaches, QUART-Online successfully increases the inference rate of the original large quadruped robot model, QUART, 
+             <strong>from 2Hz to 50Hz</strong>, enhancing the model's accuracy in rapidly changing scenarios
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-3 has-text-centered">QUART-Online Framework</h2>
+          <div class="has-text-centered">
+            <img src="./static/images/framework.jpg" alt="QUART Framework" class="image is-fullwidth">
+          </div>
+          <p class="content has-text-justified mt-4">
+            We introduce a novel latency-free quadruped MLLM model, dubbed QUART-Online, 
+            designed to enhance inference efficiency without degrading the performance of the language foundation model. 
+            By incorporating Action Chunk Discretization (ACD), we compress the original action representation space, 
+            mapping continuous action values onto a smaller set of discrete representative vectors 
+            while preserving critical information.  
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-3 has-text-centered">Experiment</h2>
+          <p class="content has-text-justified mt-4">
+            Heterogeneous action spaces of various robots are embedded into a
+            unified action space for cross-robot model training. <strong>Inputs:</strong> low-dimensional proprioception
+            <b>z</b><sub>t</sub>, noisy action chunk <b>ã</b><sub>t:t+T<sub>a</sub></sub>, control frequency c, and diffusion timestep
+            k, acting as denoising inputs; image and language inputs, acting as conditions.
+            <strong>Outputs:</strong> denoised action chunk <b>a</b><sub>t:t+T<sub>a</sub></sub>.
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- </section>
+  <section class="section"> -->
+    <div class="container is-max-desktop " style="max-width:1000px;">
+      <!-- Baseline Models (Quart) -->
+      <div class="container " style="width:110%;  margin-left: -50px">
+      <div class="columns is-multiline">
+        <div class="column is-one-third" id="crawl">
+          <div class="image-container">
+            <img src="./static/videos/sim/QUART_crawl-bar.gif" alt="QUART Crawl Bar">
+            <div style="margin-left:140px ;">crawl bar</div>
+          </div>
+        </div>
+        <div class="column is-one-third" id="avoid">
+          <div class="image-container">
+            <img src="./static/videos/sim/QUART_go-avoid.gif" alt="QUART Go Avoid">
+            <div style="margin-left:130px ;">go and avoid </div>
+          </div>
+        </div>
+        <div class="column is-one-third" id="tunnel">
+          <div class="image-container">
+            <img src="./static/videos/sim/QUART_go-tunnel.gif" alt="QUART Go Tunnel">
+            <div style="margin-left:140px ;">go tunnel</div>
+          </div>
+        </div>
+      </div>
+      </div>
+  
+      <!-- New Proposed Models (Quart-Online) -->
+      <div class="columns is-multiline " style="width:110%; margin-left:-50px">
+        <div class="column is-one-forth" id="unload">
+          <div class="image-container">
+            <img src="./static/videos/real/QUART-Online--go_avoid.gif" alt="QUART-Online Unload">
+          </div>
+        </div>
+        <div class="column is-one-forth" id="crawl-online">
+          <div class="image-container">
+            <img src="./static/videos/real/QUART-Online--go_to.gif" alt="QUART-Online Crawl Bar">
+          </div>
+        </div>
+        <div class="column is-one-forth" id="avoid-online">
+          <div class="image-container">
+            <img src="./static/videos/real/QUART-Online--go_tunnel.gif" alt="QUART-Online Go Avoid">
+          </div>
+        </div>
+        <div class="column is-one-forth" id="tunnel-online">
+          <div class="image-container">
+            <img src="./static/videos/real/QUART-Online--unload.gif" alt="QUART-Online Go Tunnel">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-3 has-text-centered">Comparison with QUART</h2>
+          <p>We benchmark our pre-trained RDT model (RDT (ours)) against baselines including RDT without pre-training
+            (RDT (scratch)), OpenVLA, ACT, and Octo.</p>
+          <p>Here are some sample comparative videos:</p>
+
+
+          <!-- Placeholder for bar chart -->
+          <img src="./static/images/comparison.png" style="margin: 2%; margin-left:-5%">
+
+          <!--  sim Row 1 -->
+          <h3 class="title is-4 mt-2 has-text-centered">Simulation Environment</h3>
+          <div class="columns is-multiline is-variable is-2" style="justify-content: center">
+            <div class="column is-5">
+              <video style="max-width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/videos/sim/QUART_go-avoid.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">⚠️QUART<br>(slow turn)</p>
+            </div>
+
+            <div class="column is-5">
+              <video style="max-width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/videos/sim/QUART-Online_go-avoid.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">✅QUART-Online<br>(swift turn)</p>
+            </div>
+
+          <!--  sim Row 2 -->
+            <div class="columns is-multiline is-variable is-2" style="justify-content: center">
+              <div class="column is-5">
+                <video style="max-width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/sim/QUART_go-tunnel.mp4" type="video/mp4">
+                </video>
+                <p class="has-text-centered">⚠️QUART<br>(clumsy adjustment)</p>
+              </div>
+  
+              <div class="column is-5">
+                <video style="max-width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/sim/QUART-Online_go-tunnel.mp4" type="video/mp4">
+                </video>
+                <p class="has-text-centered">✅QUART-Online<br>(fast adjustment)</p>
+              </div>
+            </div>
+
+          <!--  sim Row 3 -->
+            <div class="columns is-multiline is-variable is-2" style="justify-content: center">
+              <div class="column is-5">
+                <video style="max-width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/sim/QUART_crawl-bar.mp4" type="video/mp4">
+                </video>
+                <p class="has-text-centered">❌QUART<br>(clumsy adjustment)</p>
+              </div>
+  
+              <div class="column is-5">
+                <video style="max-width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                  <source src="./static/videos/sim/QUART-Online_crawl-bar.mp4" type="video/mp4">
+                </video>
+                <p class="has-text-centered">✅QUART-Online<br>(fast adjustment)</p>
+              </div>
+            </div>
+          </div>
+
+          <!--  Real Row 1 -->
+          <h3 class="title is-4 mt-2 has-text-centered">Reality Environment</h3>
+          <p class="title is-4 mt-2 has-text-centered" style="font-size:1.2rem">QUART</p>
+
+          <div class="columns is-multiline is-variable is-2" style="justify-content: center">
+            <div class="column is-3"> 
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/videos/real/QUART--go_avoid.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">⚠️go & avoid<br>(reaction latency)</p>
+            </div>
+
+            <div class="column is-3"> 
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/videos/real/QUART--go_tunnel.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">⚠️tunnel<br>(Inflexible turns)</p>
+            </div>
+
+            <div class="column is-3"> 
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/videos/real/QUART--unload.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">❌unload<br>(incoherent actions)</p>
+            </div>
+          </div>
+
+          <!--  Real Row 2 -->  
+          <p class="title is-4 mt-2 has-text-centered" style="font-size:1.2rem">QUART-Online (ours)</p>
+            <div class="columns is-multiline is-variable is-2" style="justify-content: center">
+            <div class="column is-3"> 
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/videos/real/QUART-Online--go_avoid.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">✅go & avoid<br>(fast reaction)</p>
+            </div>
+
+            <div class="column is-3"> 
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/videos/real/QUART-Online--go_tunnel.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">✅tunnel<br>(flexible turns)</p>
+            </div>
+            
+            <div class="column is-3"> 
+              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
+                <source src="./static/videos/real/QUART-Online--unload.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">✅unload <br>(steady movement)</p>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{tong2024quartonline,
+  author    = {Tong, Xinyang and Ding, Pengxiang and Wang, Donglin and Zhang, Wenjie and Cui, Can and Sun, Mingyang and Fan, Yiguo and Han, Zhao and Zhang, Hongyin and Dang, Yonghao and Huang, Siteng and Lyu, Shangke},
+  title     = {QUART-Online: Latency-Free Large Multimodal Language Model for Quadruped Robot Learning},
+  journal   = {arXiv preprint},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/Quart_Online.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Page template borrowed from 
+            <a href="https://github.com/nerfies/nerfies.github.io">
+              <span class="quart">Nerfies</span>
+            </a>
+            and
+            <a href="https://rdt-robotics.github.io/rdt-robotics/">
+              <span class="quart">RDT</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
