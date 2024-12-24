@@ -398,51 +398,46 @@
           <p class="title is-4 mt-2 has-text-centered" style="font-size:1.2rem">QUART</p>
 
           <div class="columns is-multiline is-variable is-2" style="justify-content: center">
-            <div class="column is-3"> 
-              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
-                <source src="./static/videos/real/QUART--go_avoid.mp4" type="video/mp4">
-              </video>
-              <p class="has-text-centered">⚠️go & avoid<br>(reaction latency)</p>
+            <div class="column is-3" id="tunnel-online">
+              <div class="image-container">
+                <img src="./static/videos/real/QUART--go_avoid.gif" alt="QUART-Online Go avoid">
+                <p class="has-text-centered">⚠️go & avoid<br>(reaction latency)</p>
+              </div>
             </div>
-
-            <div class="column is-3"> 
-              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
-                <source src="./static/videos/real/QUART--go_tunnel.mp4" type="video/mp4">
-              </video>
-              <p class="has-text-centered">⚠️tunnel<br>(Inflexible turns)</p>
+            <div class="column is-3" id="tunnel-online">
+              <div class="image-container">
+                <img src="./static/videos/real/QUART--go_tunnel.gif" alt="QUART-Online Go Tunnel">
+                <p class="has-text-centered">⚠️tunnel<br>(Inflexible turns)</p>
+              </div>
             </div>
-
-            <div class="column is-3"> 
-              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
-                <source src="./static/videos/real/QUART--unload.mp4" type="video/mp4">
-              </video>
-              <p class="has-text-centered">❌unload<br>(incoherent actions)</p>
+            <div class="column is-3" id="tunnel-online">
+              <div class="image-container">
+                <img src="./static/videos/real/QUART--unload.gif" alt="QUART-Online unload">
+                <p class="has-text-centered">❌unload<br>(incoherent actions)</p>
+              </div>
             </div>
           </div>
-
           <!--  Real Row 2 -->  
           <p class="title is-4 mt-2 has-text-centered" style="font-size:1.2rem">QUART-Online (ours)</p>
             <div class="columns is-multiline is-variable is-2" style="justify-content: center">
-            <div class="column is-3"> 
-              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
-                <source src="./static/videos/real/QUART-Online--go_avoid.mp4" type="video/mp4">
-              </video>
-              <p class="has-text-centered">✅go & avoid<br>(fast reaction)</p>
-            </div>
-
-            <div class="column is-3"> 
-              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
-                <source src="./static/videos/real/QUART-Online--go_tunnel.mp4" type="video/mp4">
-              </video>
-              <p class="has-text-centered">✅tunnel<br>(flexible turns)</p>
-            </div>
-            
-            <div class="column is-3"> 
-              <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay loop playsinline>
-                <source src="./static/videos/real/QUART-Online--unload.mp4" type="video/mp4">
-              </video>
-              <p class="has-text-centered">✅unload <br>(steady movement)</p>
-            </div>
+              <div class="column is-3" id="tunnel-online">
+                <div class="image-container">
+                  <img src="./static/videos/real/QUART-Online--go_avoid.gif" alt="QUART-Online Go avoid">
+                  <p class="has-text-centered">✅go & avoid<br>(fast reaction)</p>
+                </div>
+              </div>
+              <div class="column is-3" id="tunnel-online">
+                <div class="image-container">
+                  <img src="./static/videos/real/QUART-Online--go_tunnel.gif" alt="QUART-Online Go tunnle">
+                  <p class="has-text-centered">✅tunnel<br>(flexible turns)</p>
+                </div>
+              </div>
+              <div class="column is-3" id="tunnel-online">
+                <div class="image-container">
+                  <img src="./static/videos/real/QUART-Online--unload.gif" alt="QUART-Online unload">
+                  <p class="has-text-centered">✅unload <br>(steady movement)</p>
+                </div>
+              </div>
           </div>
 
 
@@ -467,7 +462,7 @@
     <pre><code>@article{tong2024quartonline,
   author    = {Tong, Xinyang and Ding, Pengxiang and Wang, Donglin and Zhang, Wenjie and Cui, Can and Sun, Mingyang and Fan, Yiguo and Han, Zhao and Zhang, Hongyin and Dang, Yonghao and Huang, Siteng and Lyu, Shangke},
   title     = {QUART-Online: Latency-Free Large Multimodal Language Model for Quadruped Robot Learning},
-  journal   = {arXiv preprint},
+  journal   = {arXiv preprint arXiv:2412.15576},
   year      = {2024},
 }</code></pre>
   </div>
